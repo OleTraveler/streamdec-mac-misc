@@ -1,0 +1,49 @@
+{
+	"SDKVersion": 2,
+	"Author": "OleTraveler",
+	"CodePath": "app/app.html",
+	"Description": "Miscellaneous Mac Utils",
+	"Name": "Miscellaneous Mac Utils",
+	"Icon": "actions/assets/action",
+	"URL": "https://github.com/OleTraveler/streamdeck-mac-misc",
+	"Version": "1.0.2",
+	"Software": {
+		"MinimumVersion": "5.0"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.11"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Category": "Plugin",
+	"CategoryIcon": "actions/assets/actionimage",
+	"Actions": [
+		{
+			"Icon": "actions/assets/actionimage",
+			"Name": "Action 1",
+			"Controllers": ["Keypad", "Encoder"],
+			"Encoder": {
+				"layout": "$B1",
+				"TriggerDescription": {
+					"Rotate": "Describe the rotation",
+					"Push": "Describe the encoder push",
+					"Touch": "Describe the touch",
+					"LongTouch": "Describe the long touch"
+				}
+			},
+			"States": [
+				{
+					"Image": "actions/assets/action"
+				}
+			],
+			"Tooltip": "This is an example tooltip",
+			"UUID": "com.oletraveler.streamdeck.macmisc.action",
+			"PropertyInspectorPath": "actions/property-inspector/inspector.html"
+		}
+	]
+}
